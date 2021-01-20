@@ -1,34 +1,29 @@
 <template>
   <div>
-    <!-- home head section   -->
-    <h1 class="pl-12 pt-10 text-4xl font-sans">DONATE</h1>
-    <div class="bg-gray-200 h-screen">
-      <img src="/corgis-home.jpeg" alt="" />
-      <div>
-        Help Keep CRS Thriving! Corgwyn Rehabilitation Sacntuary is now
-        officially a 501(c)(3)! This means all donations are tax deductible. We
-        offer several forms of donation, including cash donations, corgi
-        sponsorships, and an Amazon wishlist.
-      </div>
-    </div>
+    <!-- 1 home head section   -->
+    <!-- CORGWYN REHABILITATION SANCTUARY -->
+    <!-- A LIFELINE FOR LAST-CHANCE CORGIS -->
+    <!-- DONATE NOW MEET THE DOGS -->
     <!-- home head section   -->
 
-    <!-- learn more -->
-    <!-- ////// -->
+    <!-- 2 learn more section  -->
+    <!-- Corgwyn Rehabilitation Sanctuary -->
+    <!-- Our Mission -->
+    <!-- To assist rescued corgis with rehabilitation and retraining to enable them, when possible, to find forever adoptive homes, and provide sanctuary for those who need long term care. -->
     <!-- learn more -->
 
-    <!-- SANCTUARY MEMBERS/HELP SUPPORT CRS cards -->
+    <!-- 3 SANCTUARY MEMBERS/HELP SUPPORT CRS cards -->
     <div class="grid grid-cols-1 md:grid-cols-2"></div>
     <!-- SANCTUARY MEMBERS/HELP SUPPORT CRS cards -->
 
-    <!-- SUPPORT CRS/HOW YOU CAN HELP  -->
+    <!-- 4 SUPPORT CRS/HOW YOU CAN HELP section  -->
     <!-- NOTE: use flex not grid -->
     <!-- donate -->
     <!-- sponsor -->
     <!-- support -->
     <!-- SUPPORT CRS  -->
 
-    <!-- meet the corgis -->
+    <!-- 5 meet the corgis -->
     <!-- carosel of current corgis -->
     <!-- meet the corgis -->
   </div>
