@@ -14,7 +14,8 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/icon-32x32.png', sizes:'32x32' },
+      { rel: 'icon', type: 'image/png', href: '/icon-192x192.png', sizes:'192x192' }
     ]
   },
 
