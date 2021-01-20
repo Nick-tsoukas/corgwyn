@@ -44,7 +44,7 @@
     <div class="flex bg-corgiblue h-10 text-white px-10 items-center">
       <div>Corgwyn Rehabilitation Sanctuary © All Rights are Reserved</div>
       <div class="text-white ml-auto">
-        <a href="https://www.facebook.com/CRSIowa/">
+        <a href="https://www.facebook.com/CRSIowa/" target="_blank">
           <svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
