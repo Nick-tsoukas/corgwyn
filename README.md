@@ -1,20 +1,11 @@
 # corgwyn
 
-## Build Setup
 
-```bash
-# install dependencies
-$ npm install
+J working on:
+- components/footer.vue
+- components/nav.vue
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+N working on: (see notes in file)
+- pages/index.vue
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+https://corgwyn.pluginpretty.com/
