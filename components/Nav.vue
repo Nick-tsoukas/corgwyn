@@ -1,19 +1,68 @@
 <template>
   <div id="top">
-    <img src="/logo.png" alt="Corgwin logo image" class="py-8 pl-18" />
-    <div
-      class="pl-18 py-4 text-sm text-white bg-corgiblue"
-      :class="scrollY >= 205 && 'navbar'"
-    >
-      <ul class="flex space-x-6 items-center justify-start">
-        <li class=""><nuxt-link to="/">HOME</nuxt-link></li>
-        <li class=""><nuxt-link to="/our-corgis">OUR CORGIS</nuxt-link></li>
-        <li class=""><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-        <li class=""><nuxt-link to="/donate">DONATE</nuxt-link></li>
-        <li class=""><nuxt-link to="/sponsor">SPONSOR A CORGI</nuxt-link></li>
-        <li class=""><nuxt-link to="/contact">CONTACT US</nuxt-link></li>
-      </ul>
+    <div class="flex md:flex-none shadow">
+      <!-- logo -->
+      <img
+        src="/logo.png"
+        alt="Corgwin logo image"
+        class="py-6 pl-8 md:pl-12"
+      />
+      <!-- <img src="/shadow.png" alt="logo shadow" class="w-screen relative" /> -->
+
+      <!-- hamburger menu -->
+      <div
+        class="md:hidden ml-auto mr-8 mt-10 tham tham-e-squeeze tham-w-8"
+        :class="menu && 'tham-active'"
+        @click="menu = !menu"
+      >
+        <div class="tham-box">
+          <div class="bg-gray-900 tham-inner" />
+        </div>
+      </div>
     </div>
+
+    <!-- mobile navbar menu -->
+    <nav
+      class="block md:hidden z-50 px-16 md:px-14 py-1 text-sm text-white bg-corgiblue"
+      :class="(scrollY >= 205 ? 'navbar' : '') + (menu ? ' block' : ' hidden')"
+    >
+      <ul
+        class="md:flex md:space-x-6 md:py-3 items-center justify-start"
+        @click="menu = false"
+      >
+        <li v-for="(link, i) in links" :key="i" class="py-1">
+          <nuxt-link :to="link.path" class="block">{{ link.title }}</nuxt-link>
+          <hr />
+        </li>
+      </ul>
+    </nav>
+
+    <!-- desktop navbar menu -->
+    <nav
+      class="hidden md:block z-50 px-16 md:px-14 py-1 text-sm text-white bg-corgiblue"
+      :class="scrollY >= 205 ? 'navbar' : ''"
+    >
+      <ul
+        class="md:flex md:space-x-6 md:py-3 items-center justify-start"
+        @click="menu = false"
+      >
+        <li v-for="(link, i) in links" :key="i" class="py-1">
+          <nuxt-link :to="link.path">{{ link.title }}</nuxt-link>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- transparent layer when menu open -->
+    <!-- v-if="menu"
+      tabindex="-1" -->
+    <button
+      class="z-10 fixed w-full h-full inset cursor-default bg-black opacity-0"
+      :class="!menu ? 'hidden' : 'block'"
+      @click="menu = false"
+    ></button>
+    <!--  -->
+
+    <!-- scroll to top -->
     <transition
       enter-active-class="transition-all transition-faster ease-out-quad"
       leave-active-class="transition-all transition-fastest ease-in-quad"
@@ -49,6 +98,33 @@ export default {
   data: () => {
     return {
       scrollY: 0,
+      menu: false,
+      links: [
+        {
+          title: 'HOME',
+          path: '/',
+        },
+        {
+          title: 'OUR CORGIS',
+          path: '/our-corgis',
+        },
+        {
+          title: 'ABOUT US',
+          path: '/about',
+        },
+        {
+          title: 'DONATE',
+          path: '/donate',
+        },
+        {
+          title: 'SPONSOR A CORGI',
+          path: '/sponsor',
+        },
+        {
+          title: 'CONTACT US',
+          path: '/contact',
+        },
+      ],
     }
   },
   mounted() {
