@@ -1,17 +1,16 @@
 <template>
   <div id="top">
-    <div class="flex md:flex-none shadow">
+    <div class="flex lg:flex-none bg-gray-100 lg:bg-white">
       <!-- logo -->
       <img
         src="/logo.png"
         alt="Corgwin logo image"
-        class="py-6 pl-8 md:pl-12"
+        class="py-6 pl-8 lg:pl-64"
       />
-      <!-- <img src="/shadow.png" alt="logo shadow" class="w-screen relative" /> -->
 
       <!-- hamburger menu -->
       <div
-        class="md:hidden ml-auto mr-8 mt-10 tham tham-e-squeeze tham-w-8"
+        class="lg:hidden ml-auto mr-8 mt-10 tham tham-e-squeeze tham-w-8"
         :class="menu && 'tham-active'"
         @click="menu = !menu"
       >
@@ -23,11 +22,11 @@
 
     <!-- mobile navbar menu -->
     <nav
-      class="block md:hidden z-50 px-16 md:px-14 py-1 text-sm text-white bg-corgiblue"
+      class="block lg:hidden z-50 px-16 lg:px-14 py-1 text-sm text-white bg-corgiblue"
       :class="(scrollY >= 205 ? 'navbar' : '') + (menu ? ' block' : ' hidden')"
     >
       <ul
-        class="md:flex md:space-x-6 md:py-3 items-center justify-start"
+        class="lg:flex lg:space-x-6 lg:py-3 items-center justify-start"
         @click="menu = false"
       >
         <li v-for="(link, i) in links" :key="i" class="py-1">
@@ -39,11 +38,11 @@
 
     <!-- desktop navbar menu -->
     <nav
-      class="hidden md:block z-50 px-16 md:px-14 py-1 text-sm text-white bg-corgiblue"
+      class="hidden lg:block z-50 px-64 py-1 text-sm text-white bg-corgiblue"
       :class="scrollY >= 205 ? 'navbar' : ''"
     >
       <ul
-        class="md:flex md:space-x-6 md:py-3 items-center justify-start"
+        class="lg:flex lg:space-x-6 lg:py-3 items-center justify-start"
         @click="menu = false"
       >
         <li v-for="(link, i) in links" :key="i" class="py-1">
@@ -51,6 +50,12 @@
         </li>
       </ul>
     </nav>
+
+    <img
+      src="/shadow.png"
+      alt="logo shadow"
+      class="mx-auto lg:object-contain"
+    />
 
     <!-- transparent layer when menu open -->
     <!-- v-if="menu"
