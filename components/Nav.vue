@@ -30,7 +30,9 @@
         @click="menu = false"
       >
         <li v-for="(link, i) in links" :key="i" class="py-1">
-          <nuxt-link :to="link.path" class="block">{{ link.title }}</nuxt-link>
+          <nuxt-link :to="link.path" class="mobile block">{{
+            link.title
+          }}</nuxt-link>
           <hr />
         </li>
       </ul>
@@ -161,7 +163,7 @@ export default {
   border-bottom: 4px solid transparent;
 }
 
-.nuxt-link-exact-active,
+.nuxt-link-exact-active:not(.mobile),
 .nav-item:hover {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
