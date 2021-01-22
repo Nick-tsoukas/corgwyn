@@ -1,6 +1,10 @@
 <template>
   <div>
     <!-- 1 home head section   -->
+    <HomeHead />
+    <br>
+    <br>
+    <br>
     <!-- CORGWYN REHABILITATION SANCTUARY -->
     <!-- A LIFELINE FOR LAST-CHANCE CORGIS -->
     <!-- DONATE NOW MEET THE DOGS -->
