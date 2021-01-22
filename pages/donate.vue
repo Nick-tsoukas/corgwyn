@@ -4,7 +4,7 @@
       <div class="relative shadow-xl sm:overflow-hidden">
         <div class="absolute inset-0">
           <img
-            class="h-full w-full object-cover"
+            class="w-full h-full object-cover"
             src="/corgis-home.jpeg"
             alt="People working with corgis"
           />
@@ -33,21 +33,60 @@
 
     <!-- donate section -->
     <div
-      class="pt-8 pb-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-16 lg:mx-40"
+      class="pb-18 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-16 lg:mx-28 xl:mx-32"
     >
-      <div class="bg-red-800 h-40 w-full md:col-span-2 lg:col-span-1">
-        <h2>Donate with Venmo</h2>
-      </div>
-      <div class="bg-red-800 h-40 w-full">
-        <h2>Amazon Wishlist</h2>
-      </div>
-      <div class="bg-red-800 h-40 w-full">
-        <h2>Donate with PayPal</h2>
+      <div
+        v-for="(source, i) in donateTo"
+        :key="i"
+        class="h-full w-full flex flex-col pt-8"
+        :class="i === 0 && ` md:col-span-2 lg:col-span-1`"
+      >
+        <h2 class="text-3xl bold font-black text-corgiblue opacity-70">
+          {{ source.title }}
+        </h2>
+        <p class="flex-grow text-gray-500 text-lg font-thin">
+          {{ source.msg }}
+        </p>
+        <div class="mt-3">
+          <button>
+            <a
+              :href="source.url"
+              class="text-xl bg-green-400 text-white py-2 px-3 rounded-xl"
+              >{{ source.btnTxt }}</a
+            >
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => {
+    return {
+      donateTo: [
+        {
+          title: 'Donate with Venmo',
+          url: 'https://venmo.com/LeAnne-Foust',
+          msg: 'You can donate to CRS directly through Venmo.',
+          btnTxt: 'Donate With Venmo',
+        },
+        {
+          title: 'Amazon Wishlist',
+          url: 'http://a.co/9sFiPPX',
+          msg:
+            'Check out our Amazon Wishlist – things wear out or get used up!',
+          btnTxt: 'View Amazon Wishlist',
+        },
+        {
+          title: 'PayPal',
+          url: 'https://www.paypal.me/CorgwynRehab',
+          msg: 'You can donate to CRS directly through PayPal.',
+          btnTxt: 'Donate With PayPal',
+        },
+      ],
+    }
+  },
+}
 </script>
