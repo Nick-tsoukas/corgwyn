@@ -38,17 +38,22 @@
 
     <!-- desktop navbar menu -->
     <nav
-      class="hidden lg:block z-50 px-64 py-1 text-sm text-white bg-corgiblue"
+      class="hidden lg:block z-50 lg:px-64 text-sm text-white bg-corgiblue"
       :class="scrollY >= 205 ? 'navbar' : ''"
     >
-      <ul
-        class="lg:flex lg:space-x-6 lg:py-3 items-center justify-start"
+      <div
+        class="lg:flex lg:space-x-6 items-center justify-start"
         @click="menu = false"
       >
-        <li v-for="(link, i) in links" :key="i" class="py-1">
-          <nuxt-link :to="link.path">{{ link.title }}</nuxt-link>
-        </li>
-      </ul>
+        <nuxt-link
+          v-for="(link, i) in links"
+          :key="i"
+          :to="link.path"
+          class="py-3 nav-item"
+        >
+          {{ link.title }}
+        </nuxt-link>
+      </div>
     </nav>
 
     <img
@@ -148,5 +153,19 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.nav-item {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.nuxt-link-exact-active,
+.nav-item:hover {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
 </style>
