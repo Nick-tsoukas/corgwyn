@@ -139,13 +139,6 @@ export default {
     handleScroll() {
       this.scrollY = window.scrollY
     },
-    // scrollToTop() {
-    //   this.$smoothScroll({
-    //     scrollTo: '#top',
-    //     duration: 1000,
-    //   })
-    //   // window.scrollTo(0, 0)
-    // },
   },
 }
 </script>
