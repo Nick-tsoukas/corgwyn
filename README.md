@@ -2,19 +2,23 @@
 
 
 J working on:
-- components/footer.vue
-  - [ ] finish styling footer content
-- components/nav.vue
+  - [X] finish styling footer content
   - [x] scroll to top button
   - [x] smooth scroll to top
   - [x] create hamburger menu
   - [x] create/display mobile links menu
+  - [x] create contact page with form
+  - [x] create donate page woth form
+  - [x] implement auth google sign in
+  - [x] create cms for corgis
+  
 
 N working on: (see notes in file)
-- pages/index.vue - complete 1 & 2
+- [ ] pages/index.vue
 
 https://corgwyn.pluginpretty.com/
 
+https://corgwyn.netlify.app/
 
 --------
 
