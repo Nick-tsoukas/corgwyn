@@ -20,7 +20,7 @@
               <li v-for="(corgi, i) in corgis" :key="i">
                 <div class="space-y-4">
                   <div class="aspect-w-3 aspect-h-2">
-                    <img
+                    <nuxt-image
                       class="object-cover shadow-lg rounded-lg"
                       :src="corgi.image"
                       alt=""

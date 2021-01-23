@@ -23,7 +23,7 @@ collections:
       - label: Corgi Image
         name: image
         widget: image
-        required: false
+        required: true
         allow_multiple: false
       - label: Age in years
         name: age

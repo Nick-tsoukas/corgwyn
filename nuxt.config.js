@@ -40,8 +40,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxt/image'
   ],
+  image: {
+    sizes: [200, 350, 600]
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
