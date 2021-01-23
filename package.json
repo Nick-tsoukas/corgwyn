@@ -11,6 +11,7 @@
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.12",
     "tailwind-hamburgers": "^1.0.2",

@@ -1,20 +1,20 @@
 <template>
   <div>
-    <!-- 1 home head section   -->
     <HomeHead />
-    <br>
-    <br>
-    <br>
-    <!-- CORGWYN REHABILITATION SANCTUARY -->
-    <!-- A LIFELINE FOR LAST-CHANCE CORGIS -->
-    <!-- DONATE NOW MEET THE DOGS -->
-    <!-- home head section   -->
+
 
     <!-- 2 learn more section  -->
+    <LearnMore />
     <!-- Corgwyn Rehabilitation Sanctuary -->
+    <CallToAction />
     <!-- Our Mission -->
     <!-- To assist rescued corgis with rehabilitation and retraining to enable them, when possible, to find forever adoptive homes, and provide sanctuary for those who need long term care. -->
     <!-- learn more -->
+    
+    <br>
+    <br>
+    <br>
+
 
     <!-- 3 SANCTUARY MEMBERS/HELP SUPPORT CRS cards -->
     <div class="grid grid-cols-1 md:grid-cols-2"></div>
