@@ -122,5 +122,8 @@ export default {
       ],
     }
   },
+  mounted() {
+    console.log(JSON.stringify(this.corgis, null, 2))
+  },
 }
 </script>
