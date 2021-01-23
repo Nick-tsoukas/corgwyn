@@ -66,7 +66,7 @@
       <div class="py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
         <div class="max-w-lg mx-auto">
           <h2
-            class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl"
+            class="text-2xl font-extrabold tracking-tight text-gray-800 sm:text-3xl"
           >
             Sponsor a Corgi
           </h2>
