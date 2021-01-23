@@ -33,7 +33,7 @@
 
     <!-- donate section -->
     <div
-      class="pb-18 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-16 lg:mx-28 xl:mx-32"
+      class="pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-16 lg:mx-28 xl:mx-32"
     >
       <div
         v-for="(source, i) in donateTo"
@@ -57,6 +57,84 @@
           </button>
         </div>
       </div>
+    </div>
+
+    <div
+      class="mx-10 md:mx-32 lg:mx-40 xl:mx-44 lg:flex bg-gray-50 p-10 pb-24 rounded-2xl shadow-lg"
+    >
+      <!-- get in touch -->
+      <div class="py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div class="max-w-lg mx-auto">
+          <h2
+            class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl"
+          >
+            Sponsor a Corgi
+          </h2>
+          <p class="mt-3 text-lg leading-6 text-gray-500">
+            Interested in providing a monthly sponsorship for one of our corgi
+            residents?.
+          </p>
+        </div>
+      </div>
+      <!-- form -->
+      <form
+        netlify
+        name="donate"
+        method="POST"
+        class="grid grid-cols-1 gap-y-6 w-full lg:px-30 xl:px-44"
+      >
+        <div>
+          <label for="full_name">Full name</label>
+          <input
+            type="text"
+            name="full_name"
+            id="full_name"
+            autocomplete="name"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            placeholder="Full name"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            placeholder="Email"
+          />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            autocomplete="tel"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            placeholder="Phone"
+          />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-corgiblue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </template>
