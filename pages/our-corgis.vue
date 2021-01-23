@@ -28,7 +28,7 @@
                   <!-- </div> -->
                   <div class="text-lg leading-6 font-medium space-y-1">
                     <h3>{{ corgi.name }}</h3>
-                    <p class="text-indigo-600">
+                    <p class="text-corgiblue">
                       {{ corgi.age }}
                       {{ corgi.age === 1 ? 'year' : 'years' }} old
                     </p>
