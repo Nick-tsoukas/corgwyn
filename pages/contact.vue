@@ -21,9 +21,9 @@
           </div>
         </div>
         <!-- form -->
-        <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+        <form netlify class="grid grid-cols-1 gap-y-6">
           <div>
-            <label for="full_name" class="sr-only">Full name</label>
+            <label for="full_name">Full name</label>
             <input
               type="text"
               name="full_name"
@@ -34,7 +34,7 @@
             />
           </div>
           <div>
-            <label for="email" class="sr-only">Email</label>
+            <label for="email">Email</label>
             <input
               id="email"
               name="email"
@@ -45,7 +45,7 @@
             />
           </div>
           <div>
-            <label for="phone" class="sr-only">Phone</label>
+            <label for="phone">Phone</label>
             <input
               type="text"
               name="phone"
@@ -56,7 +56,7 @@
             />
           </div>
           <div>
-            <label for="message" class="sr-only">Message</label>
+            <label for="message">Message</label>
             <textarea
               id="message"
               name="message"
@@ -68,13 +68,14 @@
           <div>
             <button
               type="submit"
-              class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-corgiblue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Submit
             </button>
           </div>
         </form>
       </div>
+
       <!-- contact -->
       <div class="mr-auto ml-4">
         <dl class="mt-8 text-base text-gray-500">
