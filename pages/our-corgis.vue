@@ -19,13 +19,13 @@
             >
               <li v-for="(corgi, i) in corgis" :key="i">
                 <div class="space-y-4">
-                  <div class="aspect-w-3 aspect-h-2">
-                    <nuxt-image
-                      class="object-cover shadow-lg rounded-lg"
-                      :src="corgi.image"
-                      alt=""
-                    />
-                  </div>
+                  <!-- <div class="aspect-w-3 aspect-h-2"> -->
+                  <nuxt-image
+                    class="object-cover shadow-lg rounded-lg"
+                    :src="corgi.image"
+                    alt=""
+                  />
+                  <!-- </div> -->
                   <div class="text-lg leading-6 font-medium space-y-1">
                     <h3>{{ corgi.name }}</h3>
                     <p class="text-indigo-600">
