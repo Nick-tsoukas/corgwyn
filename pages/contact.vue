@@ -21,7 +21,12 @@
           </div>
         </div>
         <!-- form -->
-        <form netlify class="grid grid-cols-1 gap-y-6">
+        <form
+          netlify
+          name="contact"
+          method="POST"
+          class="grid grid-cols-1 gap-y-6"
+        >
           <div>
             <label for="full_name">Full name</label>
             <input
