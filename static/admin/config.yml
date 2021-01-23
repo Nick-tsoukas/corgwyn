@@ -13,7 +13,7 @@ collections:
     label_singular: Corgi
     extension: json
     name: corgis
-    folder: content
+    folder: content/corgis
     slug: '{{name}}'
     create: true
     fields:

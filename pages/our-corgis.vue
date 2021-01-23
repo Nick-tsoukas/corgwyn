@@ -28,7 +28,10 @@
                   </div>
                   <div class="text-lg leading-6 font-medium space-y-1">
                     <h3>{{ corgi.name }}</h3>
-                    <p class="text-indigo-600">{{ corgi.age }}</p>
+                    <p class="text-indigo-600">
+                      {{ corgi.age }}
+                      {{ corgi.age === 1 ? 'year' : 'years' }} old
+                    </p>
                   </div>
                   <div class="text-lg">
                     <p class="text-gray-500">
@@ -84,46 +87,51 @@
 
 <script>
 export default {
-  data: () => {
-    return {
-      corgis: [
-        {
-          name: 'Fluffy',
-          image:
-            'https://images.unsplash.com/photo-1507449863419-a3aa39ac22d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-          age: '1 1/2 year old',
-          story:
-            'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
-        },
-        {
-          name: 'Dazy',
-          image:
-            'https://images.unsplash.com/photo-1534235261404-7625cd79bdb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          age: '1 year old',
-          story:
-            'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
-        },
-        {
-          name: 'Sookie',
-          image:
-            'https://images.unsplash.com/photo-1501762248-ab9b555f5d94?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80',
-          age: '2 1/2 years old',
-          story:
-            'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
-        },
-        {
-          name: 'Oso',
-          image:
-            'https://images.unsplash.com/photo-1565034957450-544d60c320b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          age: '8 years old',
-          story:
-            'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
-        },
-      ],
-    }
-  },
-  mounted() {
-    console.log(JSON.stringify(this.corgis, null, 2))
+  // data: () => {
+  //   return {
+  //     corgis: [
+  //       {
+  //         name: 'Fluffy',
+  //         image:
+  //           'https://images.unsplash.com/photo-1507449863419-a3aa39ac22d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  //         age: '1 1/2 year old',
+  //         story:
+  //           'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
+  //       },
+  //       {
+  //         name: 'Dazy',
+  //         image:
+  //           'https://images.unsplash.com/photo-1534235261404-7625cd79bdb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  //         age: '1 year old',
+  //         story:
+  //           'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
+  //       },
+  //       {
+  //         name: 'Sookie',
+  //         image:
+  //           'https://images.unsplash.com/photo-1501762248-ab9b555f5d94?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80',
+  //         age: '2 1/2 years old',
+  //         story:
+  //           'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
+  //       },
+  //       {
+  //         name: 'Oso',
+  //         image:
+  //           'https://images.unsplash.com/photo-1565034957450-544d60c320b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  //         age: '8 years old',
+  //         story:
+  //           'Epsum lauroum netlrer nasfig fixxle finity oarimo carisoiy mionyoi toimpolo asam ft. Kleptin marsem flopzis',
+  //       },
+  //     ],
+  //   }
+  // },
+  async asyncData({ $content, error }) {
+    const corgis = await $content('corgis')
+      .fetch()
+      .catch((err) => {
+        error({ statusCode: 404, message: 'Page not found' })
+      })
+    return { corgis }
   },
 }
 </script>
