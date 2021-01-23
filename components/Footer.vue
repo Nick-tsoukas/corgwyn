@@ -34,7 +34,7 @@
             <nuxt-link to="/"> Home </nuxt-link>
           </li>
           <li><nuxt-link to="/about"> About Us </nuxt-link></li>
-          <li><nuxt-link to="/corgis">Our Corgis</nuxt-link></li>
+          <li><nuxt-link to="/our-corgis">Our Corgis</nuxt-link></li>
           <li><nuxt-link to="/donate">Donate</nuxt-link></li>
           <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
           <li><a href="/sitemap.xml">HTML Sitemap</a></li>
