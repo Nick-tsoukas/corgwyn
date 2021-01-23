@@ -134,7 +134,7 @@
           <nuxt-link to="/donate">
             <button class="bg-black text-white p-4 mt-4">DONATE NOW</button>
           </nuxt-link>
-          <nuxt-link to="/-about">
+          <nuxt-link to="/about2">
             <button class="bg-black text-white p-4 mt-4">DONATE NOW</button>
           </nuxt-link>
         </section>
