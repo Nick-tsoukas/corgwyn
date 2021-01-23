@@ -1,7 +1,6 @@
 <template>
   <div>
     <HomeHead />
-
     <!-- 2 learn more section  -->
     <div class="flex flex-col">
       <h1
