@@ -1,16 +1,22 @@
 # corgwyn
 
+TODO punch list:
+- [ ] SEO, og:twitter meta
+- [ ] add image srcSet
+- [ ] fix lighthouse nags
+- [ ]
+
 
 J working on:
-  - [X] finish styling footer content
-  - [x] scroll to top button
-  - [x] smooth scroll to top
-  - [x] create hamburger menu
-  - [x] create/display mobile links menu
-  - [x] create contact page with form
-  - [x] create donate page woth form
-  - [x] implement auth google sign in
-  - [x] create cms for corgis
+- [X] finish styling footer content
+- [x] scroll to top button
+- [x] smooth scroll to top
+- [x] create hamburger menu
+- [x] create/display mobile links menu
+- [x] create contact page with form
+- [x] create donate page woth form
+- [x] implement auth google sign in
+- [x] create cms for corgis
   
 
 N working on: (see notes in file)
