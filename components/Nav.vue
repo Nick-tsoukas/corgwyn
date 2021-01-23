@@ -22,17 +22,19 @@
 
     <!-- mobile navbar menu -->
     <nav
-      class="block lg:hidden z-50 px-16 lg:px-14 py-1 text-sm text-white bg-corgiblue"
+      class="block lg:hidden z-50 text-sm text-white bg-corgiblue"
       :class="(scrollY >= 205 ? 'navbar' : '') + (menu ? ' block' : ' hidden')"
     >
       <ul
-        class="lg:flex lg:space-x-6 lg:py-3 items-center justify-start"
+        class="lg:flex lg:space-x-7 items-center justify-start px-2"
         @click="menu = false"
       >
-        <li v-for="(link, i) in links" :key="i" class="py-1">
-          <nuxt-link :to="link.path" class="mobile block">{{
-            link.title
-          }}</nuxt-link>
+        <li
+          v-for="(link, i) in links"
+          :key="i"
+          class="py-1 hover:bg-white hover:text-gray-900 block px-14 lg:px-12"
+        >
+          <nuxt-link :to="link.path" class="block">{{ link.title }}</nuxt-link>
           <hr />
         </li>
       </ul>
@@ -163,7 +165,7 @@ export default {
   border-bottom: 4px solid transparent;
 }
 
-.nuxt-link-exact-active:not(.mobile),
+.nuxt-link-exact-active.nav-item,
 .nav-item:hover {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
