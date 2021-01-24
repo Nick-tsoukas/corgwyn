@@ -19,7 +19,7 @@
     >
       <!-- left -->
       <div class="">
-        <h4 class="pb-4 text-lg">Corgwyn Rehabilitation Sanctuary</h4>
+        <div class="pb-4 text-lg">Corgwyn Rehabilitation Sanctuary</div>
         <ul>
           <li class="flex py-2">
             <svg
@@ -34,7 +34,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <div class="text-gray-500">Jesup, IA</div>
+            <div class="text-gray-600">Jesup, IA</div>
           </li>
           <li class="flex py-2">
             <!-- svg -->
@@ -48,7 +48,7 @@
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
               />
             </svg>
-            <div class="text-gray-500">(319) 849-8544</div>
+            <div class="text-gray-600">(319) 849-8544</div>
           </li>
           <li class="flex py-2">
             <!-- svg -->
@@ -66,7 +66,7 @@
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            <div class="text-gray-500">corgwynrehab@gmail.com</div>
+            <div class="text-gray-600">corgwynrehab@gmail.com</div>
           </li>
         </ul>
       </div>
@@ -89,7 +89,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <nuxt-link to="/" class="text-gray-500"> Home </nuxt-link>
+            <nuxt-link to="/" class="text-gray-600"> Home </nuxt-link>
           </li>
           <li class="flex py-1">
             <svg
@@ -104,7 +104,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <nuxt-link to="/about" class="text-gray-500"> About Us </nuxt-link>
+            <nuxt-link to="/about" class="text-gray-600"> About Us </nuxt-link>
           </li>
           <li class="flex py-1">
             <svg
@@ -119,7 +119,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <nuxt-link to="/our-corgis" class="text-gray-500"
+            <nuxt-link to="/our-corgis" class="text-gray-600"
               >Our Corgis</nuxt-link
             >
           </li>
@@ -137,7 +137,7 @@
               />
             </svg>
 
-            <nuxt-link to="/donate" class="text-gray-500">Donate</nuxt-link>
+            <nuxt-link to="/donate" class="text-gray-600">Donate</nuxt-link>
           </li>
           <li class="flex py-1">
             <svg
@@ -151,7 +151,7 @@
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                 clip-rule="evenodd"
               /></svg
-            ><nuxt-link to="/contact" class="text-gray-500"
+            ><nuxt-link to="/contact" class="text-gray-600"
               >Contact Us</nuxt-link
             >
           </li>
@@ -167,7 +167,7 @@
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                 clip-rule="evenodd"
               /></svg
-            ><a href="/sitemap.xml" class="text-gray-500">HTML Sitemap</a>
+            ><a href="/sitemap.xml" class="text-gray-600">HTML Sitemap</a>
           </li>
         </ul>
       </div>
@@ -175,7 +175,11 @@
     <div class="flex bg-corgiblue h-10 text-white px-10 items-center">
       <div>Corgwyn Rehabilitation Sanctuary © All Rights are Reserved</div>
       <div class="text-white ml-auto">
-        <a href="https://www.facebook.com/CRSIowa/" target="_blank">
+        <a
+          href="https://www.facebook.com/CRSIowa/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"

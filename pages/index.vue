@@ -41,7 +41,7 @@
           <h3>SANCTUARY MEMBERS</h3>
         </div>
         <div class="text-lg flex flex-col">
-          <p class="text-gray-500 pb-8 mt-2 flex-grow">
+          <p class="text-gray-600 pb-8 mt-2 flex-grow">
             Meet our current CRS sanctuary members, read their stories and
             history, and sponsor a corgi!
           </p>
@@ -62,7 +62,7 @@
           <h3>HELP SUPPORT CRS</h3>
         </div>
         <div class="text-lg flex flex-col">
-          <p class="text-gray-500 pb-8 mt-2 flex-grow">
+          <p class="text-gray-600 pb-8 mt-2 flex-grow">
             Help us achieve our dream of a self-sustaining Corgwyn
             Rehabilitation Sanctuary…every donation helps!
           </p>
@@ -76,7 +76,7 @@
 
     <!-- 3 SUPPORT CRS  -->
     <div class="flex flex-col bg-corgiblue text-white pt-12 pb-20">
-      <h2 class="mx-auto text-2xl font-thin">SUPPORT CRS</h2>
+      <h2 class="mx-auto text-2xl font-light">SUPPORT CRS</h2>
       <h3 class="text-4xl font-bold mx-auto pt-8 pb-2">HOW YOU CAN HELP</h3>
       <hr
         class="mt-6 w-28 mx-auto border-2 rounded-full border-gray-300 opacity-70"
@@ -102,7 +102,7 @@
             </svg>
           </div>
           <h2 class="text-lg font-bold">DONATE</h2>
-          <p class="text-gray-100 font-thin">
+          <p class="text-gray-200 font-light">
             The Corgwyn Rehabilitation Sanctuary runs completely on donations.
             Your donations help cover food, vet bills, and other key expenses
           </p>
@@ -127,7 +127,7 @@
             </svg>
           </div>
           <h2 class="text-lg font-bold">SPONSOR</h2>
-          <p class="text-gray-100 font-thin">
+          <p class="text-gray-200 font-light">
             Help CRS provide food, veterinary care, and all of the essentials
             for one of CRS' corgis with a monthly or yearly sponsorship
           </p>
@@ -156,7 +156,7 @@
             </svg>
           </div>
           <h2 class="text-lg font-bold">SUPPORT</h2>
-          <p class="text-gray-100 font-thin">
+          <p class="text-gray-200 font-light">
             Want to help CRS by contributing to our ongoing, recurring costs?
             Help cover monthly expenses or donate from our Amazon wishlist
           </p>

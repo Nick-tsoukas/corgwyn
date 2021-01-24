@@ -9,7 +9,7 @@
             alt="People working with corgis"
           />
           <div
-            class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500"
+            class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-600"
             style="mix-blend-mode: multiply"
           ></div>
         </div>
@@ -44,7 +44,7 @@
         <h2 class="text-3xl bold font-black text-corgiblue opacity-70">
           {{ source.title }}
         </h2>
-        <p class="flex-grow text-gray-500 text-lg font-thin">
+        <p class="flex-grow text-gray-600 text-lg font-thin">
           {{ source.msg }}
         </p>
         <div class="mt-3">
@@ -70,7 +70,7 @@
           >
             Sponsor a Corgi
           </h2>
-          <p class="mt-3 text-lg leading-6 text-gray-500">
+          <p class="mt-3 text-lg leading-6 text-gray-600">
             Interested in providing a monthly sponsorship for one of our corgi
             residents?.
           </p>
@@ -90,7 +90,7 @@
             name="full_name"
             id="full_name"
             autocomplete="name"
-            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
             placeholder="Full name"
           />
         </div>
@@ -101,7 +101,7 @@
             name="email"
             type="email"
             autocomplete="email"
-            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
             placeholder="Email"
           />
         </div>
@@ -112,7 +112,7 @@
             name="phone"
             id="phone"
             autocomplete="tel"
-            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
             placeholder="Phone"
           />
         </div>
@@ -122,7 +122,7 @@
             id="message"
             name="message"
             rows="4"
-            class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+            class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
             placeholder="Message"
           ></textarea>
         </div>

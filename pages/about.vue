@@ -7,7 +7,7 @@
       >
         CORGWYN REHABILITATION SANCTUARY
       </h3>
-      <div class="mx-14 text-gray-500">
+      <div class="mx-14 text-gray-600">
         <p>
           <img
             src="/about.jpeg"

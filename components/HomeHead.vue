@@ -10,7 +10,7 @@
             alt="People working on laptops"
           />
           <div
-            class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500"
+            class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-600"
             style="mix-blend-mode: multiply"
           ></div>
         </div>

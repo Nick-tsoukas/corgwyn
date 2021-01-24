@@ -87,10 +87,15 @@
     >
       <button
         v-if="scrollY >= 205"
+        aria-label="scroll to top"
         class="w-12 h-12 fixed bottom-0 right-0 mb-10 mr-10 text-white bg-black rounded-full cursor-pointer outline-none hover:bg-gray-900 z-50 transition-all duration-1000 ease-in-out"
       >
         <!-- @click="scrollToTop" -->
-        <a href="#top" v-smooth-scroll="{ duration: 600 }">
+        <a
+          href="#top"
+          aria-label="Top Section"
+          v-smooth-scroll="{ duration: 600 }"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-8 ml-3 pl-1"

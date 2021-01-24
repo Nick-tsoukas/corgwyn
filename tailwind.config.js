@@ -7,7 +7,7 @@ module.exports = {
           "18": '6rem'
         },
         colors: {
-          'corgiblue': '#3183C6'
+          'corgiblue': '#2F7AC0'
         },
       },
     },

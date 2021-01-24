@@ -12,10 +12,10 @@
             >
               GET IN TOUCH
             </h2>
-            <p class="mt-3 text-lg leading-6 text-gray-500">
+            <p class="mt-3 text-lg leading-6 text-gray-600">
               Questions about CRS? Want to sponsor one of our corgis?
             </p>
-            <p class="mt-3 text-lg leading-6 text-gray-500">
+            <p class="mt-3 text-lg leading-6 text-gray-600">
               Use the form below to get in touch with us!
             </p>
           </div>
@@ -34,7 +34,7 @@
               name="full_name"
               id="full_name"
               autocomplete="name"
-              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
               placeholder="Full name"
             />
           </div>
@@ -45,7 +45,7 @@
               name="email"
               type="email"
               autocomplete="email"
-              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
               placeholder="Email"
             />
           </div>
@@ -56,7 +56,7 @@
               name="phone"
               id="phone"
               autocomplete="tel"
-              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
               placeholder="Phone"
             />
           </div>
@@ -66,7 +66,7 @@
               id="message"
               name="message"
               rows="4"
-              class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 placeholder-gray-600 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
               placeholder="Message"
             ></textarea>
           </div>
@@ -84,7 +84,11 @@
       <!-- contact -->
       <div class="mr-auto ml-4">
         <div class="flex items-center">
-          <a href="https://www.facebook.com/CRSIowa/" target="_blank">
+          <a
+            href="https://www.facebook.com/CRSIowa/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <svg
               viewBox="0 0 512 512"
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +102,7 @@
           </a>
           <p class="text-lg text-gray-600 pl-2">Follow Us on Facebook</p>
         </div>
-        <dl class="mt-8 text-base text-gray-500">
+        <dl class="mt-8 text-base text-gray-600">
           <div>
             <dd>
               <p>Jesup, IA</p>

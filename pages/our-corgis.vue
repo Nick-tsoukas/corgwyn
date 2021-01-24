@@ -7,7 +7,7 @@
             <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
               Our Corgis
             </h2>
-            <p class="text-xl text-gray-500">
+            <p class="text-xl text-gray-600">
               You can help by sposoring one of the corgis we currently have..
             </p>
           </div>
@@ -34,14 +34,14 @@
                     </p>
                   </div>
                   <div class="text-lg">
-                    <p class="text-gray-500">
+                    <p class="text-gray-600">
                       {{ corgi.story }}
                     </p>
                   </div>
 
                   <!-- <ul class="flex space-x-5">
                     <li>
-                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                      <a href="#" class="text-gray-400 hover:text-gray-600">
                         <span class="sr-only">Twitter</span>
                         <svg
                           class="w-5 h-5"
@@ -56,7 +56,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                      <a href="#" class="text-gray-400 hover:text-gray-600">
                         <span class="sr-only">LinkedIn</span>
                         <svg
                           class="w-5 h-5"

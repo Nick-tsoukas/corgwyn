@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'A self sustaining Corgwyn Rehabilitation Sanctuary (CRS)' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/icon-32x32.png', sizes:'32x32' },
