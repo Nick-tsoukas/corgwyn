@@ -34,7 +34,7 @@
       <div class="h-full w-full flex flex-col">
         <nuxt-image
           class="object-cover shadow-lg rounded-sm"
-          src="https://corgwyn.pluginpretty.com/wp-content/uploads/elementor/thumbs/13394098_642985005849654_224539124601553356_n-ny49g3bg2fkes723tcznk1o9x795mai3tahwzfxo6w.jpg"
+          src="/meet-the-corgis.jpeg"
           alt=""
         />
         <div class="text-lg leading-6 font-medium space-y-1 mt-6">
@@ -55,8 +55,8 @@
       <div class="h-full w-full">
         <nuxt-image
           class="object-cover shadow-lg rounded-sm"
-          src="https://corgwyn.pluginpretty.com/wp-content/uploads/elementor/thumbs/19702558_860857984062354_8231696582323506400_n-ny49esbikps2noydfsob3dj87xosxfbiytvmzlvcu0.jpg"
-          alt=""
+          src="/meet-the-corgis2.jpeg"
+          alt="Cute Corgis"
         />
         <div class="text-lg leading-6 font-medium space-y-1 mt-6">
           <h3>HELP SUPPORT CRS</h3>
