@@ -179,6 +179,7 @@
           href="https://www.facebook.com/CRSIowa/"
           rel="noreferrer"
           target="_blank"
+          aria-label="link to facebook page"
         >
           <svg
             viewBox="0 0 512 512"

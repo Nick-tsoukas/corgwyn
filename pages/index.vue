@@ -13,8 +13,8 @@
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-12 px-2 md:px-20 lg:px-44 pb-12"
     >
       <div class="text-gray-800 md:col-span-2 lg:col-span-1">
-        <h4 class="text-lg bold">Corgwyn Rehabilitation Sanctuary</h4>
-        <h2 class="text-5xl font-black pt-8">Our Mission</h2>
+        <h2 class="text-lg bold">Corgwyn Rehabilitation Sanctuary</h2>
+        <h3 class="text-5xl font-black pt-8">Our Mission</h3>
         <hr class="mt-6 w-32 border-2 rounded-full border-gray-400" />
         <p class="py-6 text-lg mb-4">
           To assist rescued corgis with rehabilitation and retraining to enable
