@@ -1,13 +1,11 @@
 # corgwyn
 
 TODO punch list:
-- [ ] SEO, og:twitter meta
-- [ ] add image srcSet
-- [ ] fix lighthouse nags
-- [ ]
+- [x] SEO, og:twitter meta
+- [x] add image srcSet
+- [x] fix lighthouse nags
 
-
-J working on:
+J did:
 - [X] finish styling footer content
 - [x] scroll to top button
 - [x] smooth scroll to top
@@ -17,6 +15,7 @@ J working on:
 - [x] create donate page woth form
 - [x] implement auth google sign in
 - [x] create cms for corgis
+- [x] do home page sections
   
 
 N working on: (see notes in file)
