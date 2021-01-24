@@ -31,6 +31,10 @@ export default {
   image: {
     sizes: [200, 350, 600]
   },
-  pwa: {},
+  pwa: {
+    manifest: {
+      theme_color: '#2F7AC0'
+  }
+  },
   build: {}
 }
