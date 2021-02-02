@@ -5,3 +5,11 @@
     <Footer />
   </div>
 </template>
+
+<script>
+import netlifyIdentity from 'netlify-identity-widget'
+
+export default {
+    
+  }
+</script>

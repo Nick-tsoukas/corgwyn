@@ -15,6 +15,7 @@
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.8.2",
+    "netlify-identity-widget": "^1.9.1",
     "nuxt": "^2.14.12",
     "tailwind-hamburgers": "^1.0.2",
     "vue2-smooth-scroll": "^1.5.0"
