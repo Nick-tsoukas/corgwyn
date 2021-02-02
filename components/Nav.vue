@@ -1,5 +1,6 @@
 <template>
   <div id="top">
+
     <div class="flex lg:flex-none bg-gray-100 lg:bg-white">
       <!-- logo -->
       <img
@@ -109,6 +110,16 @@
         </a>
       </button>
     </transition>
+        <div
+        v-if="
+          $nuxt.$route.hash.split('=')[0] === '#invite_token' ||
+          $nuxt.$route.hash.split('=')[0] === '#confirmation_token' ||
+          $nuxt.$route.hash.split('=')[0] === '#email_change_token' ||
+          $nuxt.$route.hash.split('=')[0] === '#recovery_token'
+          "
+      class="text-red-900 z-50 w-screen h-screen inset bg-white opacity-100"
+    >{{ gotoAdmin() }}
+    </div>
   </div>
 </template>
 
@@ -153,6 +164,11 @@ export default {
     handleScroll() {
       this.scrollY = window.scrollY
     },
+    gotoAdmin() {
+      if (process.client) {
+        location.replace(`/admin/${$nuxt.$route.hash}`)
+      }
+    }
   },
 }
 </script>

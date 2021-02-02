@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import netlifyIdentity from 'netlify-identity-widget'
+// import netlifyIdentity from 'netlify-identity-widget'
 
 export default {
     
